@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>Konversi Nilai</title>
+</head>
+<script language = "JavaScript">
+	var nilai = prompt("Masukkan Nilai (0-100)",0); //Deklarasi Variabel Nilai menjadi prompt agar bisa input nilai yang akan dikonversikan menjadi huruf
+	var hasil = ""; //Deklarasi Variabel hasil menjadi text
+	if (nilai >= 0 && nilai <=40) // Melakukan pengkondisian dengan if
+		hasil = "E"; //Menampilkan Nilai dengan Kategori E
+	if (nilai >= 40 && nilai <=55) // Melakukan pengkondisian dengan if
+		hasil = "D"; //Menampilkan Nilai dengan Kategori D
+	if (nilai >= 55 && nilai <=60) // Melakukan pengkondisian dengan if
+		hasil = "C"; //Menampilkan Nilai dengan Kategori C
+	if (nilai >= 60 && nilai <=65) // Melakukan pengkondisian dengan if
+		hasil = "BC"; //Menampilkan Nilai dengan Kategori BC
+	if (nilai >= 65 && nilai <=70) // Melakukan pengkondisian dengan if
+		hasil = "B"; //Menampilkan Nilai dengan Kategori B
+	if (nilai >= 70 && nilai <=80) // Melakukan pengkondisian dengan if
+		hasil = "AB"; //Menampilkan Nilai dengan Kategori AB
+	if (nilai >= 80 && nilai <=100) // Melakukan pengkondisian dengan if
+		hasil = "A"; //Menampilkan Nilai dengan Kategori A
+	document.write("Kategori Nilai : " + hasil); //Menampilkan Kategori Nilai
+</script>
+</body>
+</html>
