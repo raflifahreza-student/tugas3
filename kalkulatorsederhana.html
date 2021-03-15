@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title>Kalkulator Sederhana</title>
+</head>
+<body>
+	<div align="center">
+	<br><br>
+	<label for = "">Masukkan Angka 1</label>
+	<input type="text" id="angka1">
+	<br>
+	<br>
+	<label for = "">Masukkan Angka 2</label>
+	<input type="text" id="angka2">
+	<br>
+	<br>
+	<label for = "">Hasil</label>
+	<input type="text" id="hasil">
+	<br>
+	<br>
+
+	<button onclick="tambah()">Tambah (+)</button>
+	<button onclick="kurang()">Kurang (-)</button>
+	<button onclick="kali()">Kali (x)</button>
+	<button onclick="bagi()">Bagi (/)</button>
+
+	<script>
+		var angka1 = document.getElementById("angka1"); //Mendeklarasikan variabel angka1 menggunakan identifikasi pada label id
+		var angka2 = document.getElementById("angka2"); //Mendeklarasikan variabel angka2 menggunakan identifikasi pada label id
+		var hasil = document.getElementById("hasil"); //Mendeklarasikan variabel hasil menggunakan identifikasi pada label id
+
+		function tambah(){ //membuat fungsi tombol tambah ketika diklik tambah 
+			hasil.value = Number(angka1.value) + Number(angka2.value); //Mengisi hasil dengan nilai dari penjumlahan angka 1 dan angka 2
+		}
+		function kurang(){ //membuat fungsi tombol tambah ketika diklik kurang 
+			hasil.value = Number(angka1.value) - Number(angka2.value); //Mengisi hasil dengan nilai dari pengurangan angka 1 dan angka 2
+		}
+		function kali(){ //membuat fungsi tombol tambah ketika diklik kali
+			hasil.value = Number(angka1.value) * Number(angka2.value); //Mengisi hasil dengan nilai dari perkalian angka 1 dan angka 2
+		}
+		function bagi(){ //membuat fungsi tombol tambah ketika diklik bagi
+			hasil.value = Number(angka1.value) / Number(angka2.value); //Mengisi hasil dengan nilai dari pembagian angka 1 dan angka 2
+		}
+	</script>
+	
+</body>
+</html>
